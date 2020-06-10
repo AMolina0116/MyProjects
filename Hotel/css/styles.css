@@ -1,1 +1,119 @@
+/* Reset */
+  *{margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  }
+
+/* Main Styling all stylings below are for the entire page I jut titles the individually*/
+html, body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+
+/* Link Styling */
+a{
+  color: #333;
+  text-decoration: none;/* Removes link underline */
+}
+/* Heading Styling */
+h1, h2, h3{
+  padding-bottom: 20px;/* adds spacing below */
+}
+/* Paragraph Styling */
+p{
+  margin: 10px 0px;/* adds space top and bottom none left and right */
+}
+/* Utility classes */
+.container{
+  margin: auto;/* margin auto centers the item MUST have a width */
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.text-primary{
+  color: #f7c08a;
+}
+
+.lead{
+  font-size: 20px;
+}
+
+.btn{
+  display: inline-block;
+  font-size: 18px;
+  color: white;/* Button text color */
+  background: #333;/* Button background color */
+  padding: 13px 20px; /* Makes button area a little larger */
+  border: none;/* Removes border */
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: #f7c08a;/* Background of button changes to this color when hovering */
+  color: #333;/* Text color changes to this color when hovering */
+}
+
+/* Navbar */
+#navbar{
+  background: #333;
+  color: #fff;/* Plain Text color */
+  overflow: auto;/* Background shows no matter what */
+}
+/* Style the Logo(If also link) and the links in page */
+#navbar a {
+  color: #fff;/* Link color */
+}
+/* Navbar Logo in H1 */
+#navbar h1{
+  float: left;/* Makes the item float left and everything else pushes beside it*/
+  padding-top: 20px;/* Places 20px of space above */
+}
+/* Navbar Unordered list */
+#navbar ul{
+  list-style: none; /* Removes any styling to the list ex bullets */
+  float: right;/* Makes the item float right and everything else pushes beside it */
+}
+/* Navbar Unordered list targeting the lists  */
+#navbar ul li{
+  float: left;/* Makes the item float left and everything else pushes beside it*/
+}
+/* Navbar Unordered list targeting the lists targeting links inside  */
+#navbar ul li a {
+  display: block;/* Displaying inline elements as block allows items to be styled */
+  padding: 20px;/* 20 px spacing all around */
+  text-align: center;/*  Aligns text */
+}
+/* Hover psudo-selector what the link does when you hover over it*/
+#navbar ul li a:hover,
+#navbar ul li a.current{
+  background: #444;/* The color around the link while hovering over */
+  color: #f7c08a;/*  The color the link itself turns while hovering over */
+}
+/* Showcase area itself */
+#showcase{
+  background: url(../img/showcase.jpg) no-repeat center center/cover;
+  /* .. means to go outside the current folder */
+  /* no-repeat = background does not repeat */
+  /* center center = background position */
+  /* /cover = covers entire area */
+  height: 600px;/* Height of background */
+}
+/* Content inside showcase */
+#showcase .showcase-content{
+  color: white;/* text color */
+  text-align: center;/* aligns text center */
+  padding-top: 170px;/* 170px of space above */
+
+}
+/* Content inside showcase h1 */
+#showcase .showcase-content h1{
+  font-size: 60px;
+  line-height: 1.2em;
+}
+/* Content inside showcase p */
+#showcase .showcase-content p{
+  padding-bottom: 20px;/* to push the link down a little */
+  line-height: 1.7em;/* the height of space in the lime */
+}
 
