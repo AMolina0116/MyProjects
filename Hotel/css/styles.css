@@ -45,7 +45,7 @@ p{
   color: white;/* Button text color */
   background: #333;/* Button background color */
   padding: 13px 20px; /* Makes button area a little larger */
-  border: none;/* Removes border */
+  border: none;/* Removes border if any */
   cursor: pointer;
 }
 
@@ -53,6 +53,31 @@ p{
   background: #f7c08a;/* Background of button changes to this color when hovering */
   color: #333;/* Text color changes to this color when hovering */
 }
+
+.btn-light{
+  background: #f4f4f4;
+  color: #333
+}
+
+.bg-dark{
+  background: #333;
+  color: #fff;
+}
+
+.bg-light{
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-primary{
+  background: #f7c08a;
+  color: #333;
+}
+/* All floats must be cleared after the section is done */
+.clr{
+  clear: both;
+}
+
 
 /* Navbar */
 #navbar{
@@ -116,4 +141,45 @@ p{
   padding-bottom: 20px;/* to push the link down a little */
   line-height: 1.7em;/* the height of space in the lime */
 }
+/* Home info */
+#home-info{
+  height: 400px;
+}
 
+#home-info .info-img{
+  float: left;/* Makes image go to the left of the page */
+  width: 50%;/* Makes the image 50% of the page */
+  background: url('../img/photo-1.jpg') no-repeat;
+  min-height: 100%;/* Image is taking up 100% of the avaliable space in home info */
+}
+
+#home-info .info-content {
+  float: right;/* Makes image go to the right */
+  width: 50%;/* Makes the image 50% of the page */
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;/* 50px top/bottom 30px left/right */
+  overflow: hidden;/* Makes sure theres no scroll bar */
+}
+
+#home-info .info-content p{
+  padding-bottom: 30px;/* Pushes it down 30px */
+}
+/* Features */
+.box{
+  float:left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+
+.box i{
+  margin-bottom: 10px;
+}
+/* Footer */
+.main-footer{
+  text-align: center;
+  background: #444;
+  color: #fff;
+  padding: 20px;
+}

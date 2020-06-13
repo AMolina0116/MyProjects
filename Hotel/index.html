@@ -6,6 +6,7 @@
   <meta name="description" content="Grand opening of the best hotel in Boston">
   <meta name="keywords" content="Five stars, boston hotel, pet friendly, room service,
   free breakfast">
+  <script src="https://kit.fontawesome.com/05b568f28e.js" crossorigin="anonymous"></script><!-- font awesome link -->
   <link rel="stylesheet" href="css/styles.css">
   <title>Hotel BT | Enjoy</title>
 </head>
@@ -20,7 +21,7 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
       </div>
-    </nav>
+    </nav><!-- End navbar section -->
 
     <div id="showcase"><!-- Showcase is the items or photos below the Navbar can also be placed inside div if you want to restrict it -->
       <div class="container"><!-- Creates a container around all items inside -->
@@ -31,11 +32,43 @@
              <a class="btn" href="about.html">About our Hotel</a><!-- Link below paragrph -->
         </div>
       </div>
-    </div>
+    </div><!-- End showcase section -->
   </header>
 
-  <section id="home-info">
-
+  <section id="home-info" class="bg-dark">
+    <div class="info-img"></div>
+    <div class="info-content">
+      <h2><span class="text-primary">History</span> Of Our Hotel</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae totam unde, 
+        ullam ducimus consequuntur veritatis architecto quod, quasi eum at eaque. Quidem obcaecati 
+        laudantium soluta distinctio assumenda nobis voluptatibus modi dignissimos iusto cumque, 
+        nam reprehenderit exercitationem illum dolorum? Laudantium, tempora?</p>
+        <a href="about.html" class="btn btn-light" >Read More</a>
+    </div><!-- End home-info section -->
   </section>
+
+  <section id="features">
+    <div class="box bg-light">
+      <i class="fas fa-hotel fa-3x"></i><!-- Copied from font awesome to input icon fa-2to5x to make it larger -->
+      <h3>Great Location</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, deleniti?</p>
+    </div><!-- End box 1 -->
+    <div class="box bg-primary">
+      <i class="fas fa-utensils fa-3x"></i><!-- Copied from font awesome to input hotel icon fa-2to5x to make it larger -->
+      <h3>Free Meals</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, deleniti?</p>
+    </div><!-- End box 2 -->
+    <div class="box bg-light">
+      <i class="fas fa-dumbbell fa-3x"></i><!-- Copied from font awesome to input hotel icon fa-2to5x to make it larger -->
+      <h3>Fitness Room</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, deleniti?</p>
+      </div><!-- End box 3 -->
+  </section>
+
+  <div class="clr"></div><!-- Whenever you float items they MUST be cleared in order to continue styling below -->
+
+  <footer class="main-footer"><!-- footer tag -->
+    <p>Hotel BT &copy; 2020, All Rights Reserved</p>
+  </footer><!-- End main-footer section -->
 </body>
 </html>
