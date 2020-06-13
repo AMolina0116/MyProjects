@@ -78,6 +78,15 @@ p{
   clear: both;
 }
 
+.l-heading{
+  font-size: 40px;
+}
+
+/* Padding */
+.py-1{ padding: 10px 0;}/* To copy a lign down or up shft+alt+up or down */
+.py-2{ padding: 20px 0;}
+.py-3{ padding: 30px 0;}
+
 
 /* Navbar */
 #navbar{
@@ -175,6 +184,75 @@ p{
 
 .box i{
   margin-bottom: 10px;
+}
+/* About info */
+#about-info .info-right{
+  float: right;
+  width: 50%;/* info right taking 50% of the screen */
+  min-height: 100%;
+}
+#about-info .info-right img{
+  display: block;/* img are by default inline changing to block allows you to center it */
+  width: 70%;/* img taking 70% of the avaliable area which is 50% of the screen */
+  margin: auto;/* margin auto centers */
+  border-radius: 50%;/* Makes image look oval instead of square by curving the outside */
+}
+#about-info .info-left{
+  float: left;
+  min-height: 100%;
+  width: 50%;/* info left taking 50% of the screen */
+}
+/* Testimonials */
+#testimonials{
+  height: 600px;
+  background: url('../img/test-bg.jpg') no-repeat center center/cover;
+  padding-top: 100px;
+}
+
+#testimonials h2{
+  color: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#testimonials .testimonial{
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  opacity: 0.9;/* Opacity makes the item see through goes 0 all the way see through-1 not see through */
+}
+
+#testimonials .testimonial img{
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+/* Contact form */
+#contact-form .form-group{
+  margin: 20px;
+}
+
+#contact-form label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input, 
+#contact-form textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+#contact-form textarea{
+  height: 200px;
+}
+
+#contact-form input:focus, /*Psudo selector Focus state when you are clicked into the box */
+#contact-form textarea:focus{
+  outline: none;
+  border-color: #f7c08a;
 }
 /* Footer */
 .main-footer{
