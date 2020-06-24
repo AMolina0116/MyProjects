@@ -167,7 +167,7 @@ a {
   color: #fff;
   padding: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 870px) {
   .navbar {
     flex-direction: column;
     height: 80px;
