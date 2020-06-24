@@ -200,7 +200,8 @@ a {
     width: 100%;
   }
   img{
-   
+   max-width: 100%;
+   max-height:auto;
   }
   .flex-row .item1 .item2 .item3{
  
