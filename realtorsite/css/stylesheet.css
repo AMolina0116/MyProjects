@@ -66,7 +66,7 @@ a {
     center/cover;
   height: 100vh;
   text-align: center;
-  background-position-y: 95%;
+  background-position-y: 90%;
 }
 
 .hero-contactus {
@@ -74,6 +74,7 @@ a {
     no-repeat center center/cover;
   height: 100vh;
   text-align: center;
+  background-position-y: 40%;
 }
 
 .hero {
