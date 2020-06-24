@@ -21,11 +21,13 @@
   display: flex;
   text-align: center;
   justify-content: center;
+ 
 }
 
 .flex-row .item1 .item2 .item3{
   max-width: 100%;
   max-height: auto;
+  align-items: center;
 }
 .flex-row div{
   margin: 5px;
