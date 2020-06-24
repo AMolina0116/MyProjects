@@ -4,6 +4,16 @@
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 20px 60px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  font-size: 20px;
+}
 
 body {
   background: #fff;
@@ -26,6 +36,7 @@ ul {
   padding: 30px;
   position: fixed;
   top: 0px;
+  opacity: 0.9;
 }
 
 .navbar a {
@@ -50,11 +61,28 @@ a {
   color: #333;
 }
 
+.hero-aboutus {
+  background: url("../images/scott-webb-1ddol8rgUH8-unsplash.jpg") no-repeat
+    center center/cover;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+.hero-contactus {
+  background: url("../images/bailey-anselme-Bkp3gLygyeA-unsplash.jpg") no-repeat
+    center center/cover;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
 .hero {
   background: url("../images/aaron-huber-s95oB2n9jng-unsplash.jpg") no-repeat
     center center/cover;
   height: 100vh;
   text-align: center;
+  position: relative;
 }
 
 .hero .content {
@@ -72,7 +100,21 @@ a {
 }
 
 .hero .content p {
-  font-size: 26px;
+  font-size: 30px;
   width: 600px;
-  margin: 20px 0 30px;
+  margin: 10px 30px;
+}
+
+.hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.hero * {
+  z-index: 20;
 }
