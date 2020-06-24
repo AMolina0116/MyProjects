@@ -62,27 +62,28 @@ a {
 }
 
 .hero-aboutus {
-  background: url("../images/scott-webb-1ddol8rgUH8-unsplash.jpg") no-repeat
-    center center/cover;
+  background: url("../images/chi-m-R1uiDu8vBh0-unsplash.jpg") no-repeat center
+    center/cover;
   height: 100vh;
   text-align: center;
-  position: relative;
+  background-position-y: 95%;
 }
 
 .hero-contactus {
-  background: url("../images/bailey-anselme-Bkp3gLygyeA-unsplash.jpg") no-repeat
-    center center/cover;
+  background: url("../images/bailey-anselme-Bkp3gLygyeA-unsplash\ \(2\).jpg")
+    no-repeat center center/cover;
   height: 100vh;
   text-align: center;
-  position: relative;
 }
 
 .hero {
-  background: url("../images/aaron-huber-s95oB2n9jng-unsplash.jpg") no-repeat
-    center center/cover;
+  background: url("../images/francesca-tosolini-XAHSexPxSus-unsplash\ \(1\).jpg")
+    no-repeat center center/cover;
   height: 100vh;
   text-align: center;
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .hero .content {
@@ -96,13 +97,14 @@ a {
 }
 
 .hero .content h1 {
-  font-size: 60px;
+  font-size: 3rem;
 }
 
 .hero .content p {
-  font-size: 30px;
-  width: 600px;
+  font-size: 1.5rem;
+  width: 100%;
   margin: 10px 30px;
+  padding: 0 20px;
 }
 
 .hero:before {
@@ -112,9 +114,20 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .hero * {
   z-index: 20;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+  .navbar a {
+    padding: 10px 10px;
+    margin: 0 3px;
+  }
 }
