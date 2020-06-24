@@ -22,6 +22,11 @@
   text-align: center;
   justify-content: center;
 }
+
+.flex-row .item1 .item2 .item3{
+  max-width: 100%;
+  max-height: auto;
+}
 .flex-row div{
   margin: 5px;
   display: flex;
@@ -78,7 +83,6 @@ ul {
 
 img {
   max-width: 100%;
-  height: auto;
 }
 .logo{
   font-size: 1.5rem;
