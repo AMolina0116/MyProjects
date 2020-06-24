@@ -4,19 +4,40 @@
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .btn {
   cursor: pointer;
   display: inline-block;
-  padding: 20px 60px;
+  padding: 10px 60px;
   color: #fff;
   border: none;
   border-radius: 5px;
   background-color: #333;
   font-size: 20px;
+  opacity: .95;
 }
 
+.flex-row {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.flex-row div{
+  margin: 5px;
+  display: flex;
+  width: 100%;
+}
+.flex-row h3{
+  font-size: 3rem;  
+}
+.flex-row-article {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
 body {
-  background: #fff;
+  background: #f9f9f9;
   color: #333;
   line-height: 1.6;
 }
@@ -31,12 +52,13 @@ ul {
   justify-content: space-between;
   background-color: #333;
   color: #fff;
-  height: 70px;
+  height: 50px;
   width: 100%;
-  padding: 30px;
+  padding: 5px;
   position: fixed;
   top: 0px;
   opacity: 0.9;
+  z-index: 2;
 }
 
 .navbar a {
@@ -50,10 +72,15 @@ ul {
 }
 .navbar ul {
   display: flex;
+  position: sticky;
+  top: 0;
 }
 
 img {
   width: 100%;
+}
+.logo{
+  font-size: 1.5rem;
 }
 
 a {
@@ -98,6 +125,7 @@ a {
 
 .hero .content h1 {
   font-size: 3rem;
+  z-index: 1;
 }
 
 .hero .content p {
@@ -105,6 +133,7 @@ a {
   width: 100%;
   margin: 10px 30px;
   padding: 0 20px;
+  z-index: 1;
 }
 
 .hero:before {
@@ -116,21 +145,54 @@ a {
   height: 100%;
   background: rgba(0, 0, 0, 0.1);
 }
+.featuredlistings h2{
+  text-align: center;
+  font-size: 2rem;
+  margin: 5px;
+  padding: 10px;
+}
 
-.hero * {
-  z-index: 20;
+.article-1 p, .article-2 p{
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 50%;
+
+}
+
+#mainfooter p{
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 20px;
 }
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    height: 120px;
+    height: 80px;
     padding: 20px;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
   }
   .navbar a {
     padding: 10px 10px;
     margin: 0 3px;
   }
 
-  .hero-aboutus {
-  
-}
+  .flex-row{
+    flex-wrap: wrap;
+  }
+
+  .featuredlistings h2{
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .article-1 p, .article-2 p{
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
