@@ -14,23 +14,21 @@
   border-radius: 5px;
   background-color: #333;
   font-size: 20px;
-  opacity: .95;
+  opacity: 0.95;
 }
 
 .flex-row {
   display: flex;
   text-align: center;
   justify-content: center;
- 
 }
 
-.flex-row div{
+.flex-row div {
   margin: 5px;
   display: flex;
-
 }
-.flex-row h3{
-  font-size: 3rem;  
+.flex-row h3 {
+  font-size: 3rem;
 }
 .flex-row-article {
   display: flex;
@@ -77,12 +75,14 @@ ul {
   position: sticky;
   top: 0;
 }
-
+.navbar h1 {
+}
 img {
   max-width: 100%;
 }
-.logo{
+.logo {
   font-size: 1.5rem;
+  position: relative;
 }
 
 a {
@@ -91,8 +91,8 @@ a {
 }
 
 .hero-aboutus {
-  background: url("../images/roger-starnes-sr-BNY7m7BhS2o-unsplash.jpg") no-repeat center
-    center/cover;
+  background: url("../images/roger-starnes-sr-BNY7m7BhS2o-unsplash.jpg")
+    no-repeat center center/cover;
   height: 100vh;
   text-align: center;
 }
@@ -147,29 +147,142 @@ a {
   height: 100%;
   background: rgba(0, 0, 0, 0.1);
 }
-.featuredlistings h2{
+.featuredlistings h2 {
   text-align: center;
   font-size: 2rem;
   margin: 5px;
   padding: 10px;
 }
 
-.article-1 p, .article-2 p{
+.article-1 p,
+.article-2 p {
   margin: 0 auto;
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
   width: 50%;
-
+}
+#mainfooter {
+  height: 50px;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  width: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#mainfooter p{
+#mainfooter p {
+}
+
+.ourteam {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #fff;
+}
+.fred {
+  background: #333;
+  opacity: 0.9;
+  margin: 5px;
+  padding: 10px;
+  height: ;
+}
+.fred img {
+  height: 200px;
+  border-radius: 50%;
+}
+.sammy {
+  background: #333;
+  opacity: 0.9;
+  margin: 5px;
+  padding: 10px;
+}
+.sammy img {
+  border-radius: 50%;
+}
+.box {
+  display: flex;
+  align-items: center;
   text-align: center;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
   background: #333;
   color: #fff;
-  padding: 20px;
+  padding: 10px;
 }
-@media(max-width: 768px) {
+
+.box1 {
+  border-right: black solid 1px;
+  width: 33.3%;
+}
+.box2 {
+  width: 33.3%;
+}
+.box3 {
+  border-left: black solid 1px;
+  width: 33.3%;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  position: relative;
+  top: 30%;
+  opacity: 0.85;
+  margin: 0 30%;
+}
+.contactform {
+  height: 60vh;
+}
+#subject {
+  height: 100px;
+}
+@media screen and (max-width: 768px) {
+  #icons {
+    display: none;
+  }
+  .contactform {
+    width: 100%;
+    line-height: 0.5;
+  }
+  .container {
+    margin: 0 auto;
+    top: 80px;
+  }
+  .fred {
+    position: relative;
+    top: 40px;
+  }
   .navbar {
     flex-direction: column;
     height: 80px;
@@ -178,29 +291,30 @@ a {
     align-items: center;
     justify-content: center;
   }
-  .navbar a {
-    padding: 10px 10px;
-    margin: 0 3px;
-  }
 
-  .flex-row{
+  .flex-row {
     flex-wrap: wrap;
   }
 
-  .featuredlistings h2{
+  .featuredlistings h2 {
     text-align: center;
     font-size: 2rem;
   }
 
-  .article-1 p, .article-2 p{
+  .article-1 p,
+  .article-2 p {
     margin: 0 auto;
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
     width: 100%;
   }
-  img{
-   flex: 1;
+  img {
+    flex: 1;
   }
-  .flex-row .item1 .item2 .item3{
- 
+  .fred img {
+    height: 80px;
+  }
+}
+.sammy img {
+}

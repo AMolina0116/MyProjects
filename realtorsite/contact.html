@@ -1,26 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/stylesheet.css" />
-  <title>About Us</title>
-</head>
-<body>
-  <!-- Begin Navbar -->
-  <header class="hero-contactus">
-    <div id="navbar" class="navbar">
-      <h1 class="logo">
-        <a href="index.html">MReality</a>
-      </h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a class="current" href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-    </div>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <title>About Us</title>
+  </head>
+  <body>
+    <!-- Begin Navbar -->
+    <header class="hero-contactus">
+      <div id="navbar" class="navbar">
+        <h1 class="logo">
+          <a href="index.html">MReality</a>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="current" href="about.html">About </a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <section class="contactform">
+        <div class="container">
+          <form action="action_page.php">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Email" />
+
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="First Name"
+            />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Last Name"
+            />
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="usa">USA</option>
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="When do you plan on moving?"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+    </header>
+    <main></main>
+    <footer id="mainfooter">
+      <p>MReality &copy; 2020, All Rights Reserved</p>
+    </footer>
+  </body>
 </html>
