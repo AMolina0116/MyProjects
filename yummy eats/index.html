@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/stylesheet.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="overlay" id="overlay">
+      <h3>Searching Now . . .</h3>
+    </div>
+    <!-- Begin top section -->
+    <div class="hero-bg">
+      <section class="top">
+        <header>
+          <a href="#">yummy.eats</a>
+        </header>
+        <h1><span>The Healthy</span> Eating Experience</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore
+          aspernatur dolores voluptatem rem! Et pariatur similique porro
+          inventore dolorem ad, aperiam in. At maxime officia eius, nulla amet
+          consequuntur praesentium cupiditate nobis eveniet quaerat ipsum. Amet
+          cum voluptatem pariatur id?
+        </p>
+        <div class="form-container">
+          <form action="">
+            <div class="form-left">
+              <label for="city">Enter Your City:</label>
+              <input type="text" name="city" id="city" />
+              <p>Example "San Diego"</p>
+            </div>
+            <div class="button-wrapper">
+              <input type="button" value="Find Food Now" id="cta-btn" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <!-- End Top Section -->
+    <!-- Start Bottom Section -->
+    <section id="authentic" class="bottom">
+      <div>
+        <h2>Authentic. Wholesome</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          facere dolor asperiores ipsum nulla a! Necessitatibus consequuntur
+          facilis error repudiandae commodi id ab voluptatum reiciendis, est
+          modi saepe nam nisi beatae, dolorem omnis unde corrupti ut labore
+          tenetur sapiente quidem.
+        </p>
+      </div>
+      <div>
+        <img
+          src="/images/charles-deluvio-D-vDQMTfAAU-unsplash.jpg"
+          alt="Food in a bowl"
+        />
+      </div>
+    </section>
+
+    <script>
+      let btn = document.getElementById("cta-btn");
+      let overlay = document.getElementById("overlay");
+
+      btn.addEventListener("click", () => {
+        overlay.style.display = "grid";
+        overlay.classList.add("animate-overlay");
+      });
+    </script>
+  </body>
+</html>
