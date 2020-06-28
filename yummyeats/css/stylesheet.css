@@ -13,7 +13,7 @@
 }
 
 .hero-bg {
-  background: url("/images/bg.jpg") center center/cover;
+  background: url("../images/bg.jpg") center center/cover;
   text-align: center;
   color: #fff;
   padding-bottom: 4em;
