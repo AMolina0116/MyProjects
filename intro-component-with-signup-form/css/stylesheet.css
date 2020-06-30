@@ -104,7 +104,8 @@ a {
   line-height: 2.5em;
   margin: 1em 0;
 }
-input:focus, textarea:focus{
+input:focus,
+textarea:focus {
   box-shadow: 0 0 3pt 2pt rgb(190, 187, 187);
   outline: none;
 }
@@ -212,6 +213,5 @@ input:focus, textarea:focus{
   .block-1 p {
     color: rgb(167, 163, 163);
     font-size: 0.47rem;
-    
   }
 }
