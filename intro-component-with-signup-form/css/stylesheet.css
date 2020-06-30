@@ -71,6 +71,10 @@ a {
   border-radius: 0.3em;
   padding: 0.5em 0;
   margin: 0.5em 0 0 0;
+  border: none;
+  outline: none;
+  color: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .btn2:hover {
