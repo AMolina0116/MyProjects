@@ -43,25 +43,25 @@
               type="text"
               name="firstname"
               id="firstname"
-              placeholder="First Name" /><span class="error"
-              ><p id="first-name_error"></p></span
-          ></label>
+              placeholder="First Name"
+          /></label>
+
           <label for="lastname"
             ><input
               type="text"
               name="lastname"
               id="lastname"
-              placeholder="Last Name" /><span class="error"
-              ><p id="lastname_error"></p> </span
-          ></label>
+              placeholder="Last Name"
+          /></label>
+
           <label for="email">
-            <input type="email" id="email" placeholder="Email" />
-            <span class="error"><p id="email_error"></p></span
-          ></label>
+            <input type="email" id="email" placeholder="Email"
+          /></label>
+
           <label for="password"
             ><input type="password" id="password" placeholder="Password" />
-            <span class="error"><p id="password_error"></p></span
-          ></label>
+            ></label
+          >
         </form>
         <div class="btn2">
           <a href="#">CLAIM YOUR FREE TRIAL</a>
@@ -74,50 +74,5 @@
     </div>
     <!-- End form block -->
     <footer></footer>
-    <script>
-      document.getElementById(
-        "english_registration_form"
-      ).onsubmit = function () {
-        var w = document.forms["english_registration_form"]["firstname"].value;
-        var x = document.forms["english_registration_form"]["lastname"].value;
-        var y = document.forms["english_registration_form"]["email"].value;
-        var z = document.forms["english_registration_form"]["password"].value;
-
-        var submit = true;
-
-        if (w == null || w == "") {
-          nameError = "Please enter your First Name";
-          document.getElementById("First-Name_error").innerHTML = nameError;
-          submit = false;
-        }
-        if (x == null || x == "") {
-          nameError = "Please enter your Last Name";
-          document.getElementById("Last-Name_error").innerHTML = nameError;
-          submit = false;
-        }
-
-        if (y == null || y == "") {
-          emailError = "Please enter your Email";
-          document.getElementById("Email_error").innerHTML = emailError;
-          submit = false;
-        }
-
-        if (z == null || z == "") {
-          telephoneError = "Please enter your Password";
-          document.getElementById("Password_error").innerHTML = telephoneError;
-          submit = false;
-        }
-
-        return submit;
-      };
-
-      function removeWarning() {
-        document.getElementById(this.id + "_error").innerHTML = "";
-      }
-      document.getElementById("firstname").onkeyup = removeWarning;
-      document.getElementById("lastname").onkeyup = removeWarning;
-      document.getElementById("email").onkeyup = removeWarning;
-      document.getElementById("password").onkeyup = removeWarning;
-    </script>
   </body>
 </html>
