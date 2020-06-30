@@ -54,7 +54,7 @@ a {
   background: hsl(248, 32%, 49%);
   border-radius: 0.3em;
   margin: 0.5em 0;
-  padding: 0.5em 0;
+  padding: 0.5em 0.5em;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .btn:hover {
