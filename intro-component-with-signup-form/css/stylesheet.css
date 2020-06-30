@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("/images/bg-intro-desktop.png");
+  background-color: hsl(0, 100%, 74%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1em;
+  text-align: center;
+}
+
+.main-text {
+  text-align: left;
+  margin-right: 1em;
+  padding: 1em;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+.main-text h1 {
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font-size: 3em;
+  width: 100%;
+  margin: 0 1em 0 0;
+}
+
+.main-text p {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 0.8rem;
+  background: hsl(248, 32%, 49%);
+  border-radius: 0.3em;
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+  background: hsl(247, 31%, 42%);
+}
+.btn2 {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 0.8rem;
+  background: hsl(154, 59%, 51%);
+  border-radius: 0.3em;
+  padding: 0.5em 0;
+  margin: 0.5em 0 0 0;
+}
+
+.btn2:hover {
+  background: hsl(154, 57%, 45%);
+}
+.btn span {
+  font-weight: bold;
+}
+.block-wrapper {
+  margin: 0 0 0 1rem;
+  max-width: 400px;
+}
+
+.block-1 {
+  flex-grow: 1;
+  background: #fff;
+  border-radius: 0.5em;
+  padding: 1.3em;
+  margin: 0.5em 0;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+#firstname,
+#lastname,
+#email,
+#password {
+  width: 100%;
+  border-radius: 0.5em;
+  border-style: solid;
+  border-width: 0.5px;
+  line-height: 2.5em;
+  margin: 1em 0;
+}
+input:focus, textarea:focus{
+  box-shadow: 0 0 3pt 2pt rgb(190, 187, 187);
+  outline: none;
+}
+}
+#firstname {
+  margin-top: 0.3rem;
+}
+
+#password {
+}
+.block-1 p {
+  color: rgb(167, 163, 163);
+  font-size: 0.5rem;
+  margin-top: 0.5em;
+}
+.block-1 p a {
+  color: hsl(0, 100%, 74%);
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    margin: 0em 0;
+  }
+  .main-text {
+    text-align: center;
+    margin-right: 0em;
+    padding: 0em;
+  }
+  .main-text h1 {
+    font-size: 1.5em;
+  }
+
+  .main-text p {
+    margin: 1em 0 0 0;
+    padding: 0.5em;
+    font-size: 1em;
+  }
+  #firstname,
+  #lastname,
+  #email,
+  #password {
+    width: 100%;
+    border-color: rgb(219, 215, 215);
+    border-radius: 0.5em;
+    border-style: solid;
+    border-width: 0.5px;
+    line-height: 2.5em;
+    margin: 0.5em 0;
+  }
+  .block-wrapper {
+    margin: 0 0 0 0rem;
+  }
+
+  .btn,
+  .btn2 {
+    font-size: 0.8rem;
+    padding: 1.5em 0;
+    margin: 0.5em 0 0 0;
+  }
+  .btn {
+    margin: 4em 0 1em 0;
+  }
+  .block-1 p {
+    color: rgb(167, 163, 163);
+  }
+}
+@media (max-width: 360px) {
+  body {
+    flex-direction: column;
+    margin: 0em 0;
+  }
+  .main-text {
+  }
+  .main-text h1 {
+    font-size: 1.5em;
+    margin-bottom: 1.3em;
+  }
+
+  .main-text p {
+    font-size: 1rem;
+    margin: 1.3em 0 0.1em 0;
+    padding: 0.5em;
+  }
+  #firstname,
+  #lastname,
+  #email,
+  #password {
+    width: 100%;
+    border-color: rgb(219, 215, 215);
+    border-radius: 0.5em;
+    border-style: solid;
+    border-width: 0.5px;
+    line-height: 2.5em;
+    margin: 0.5em 0;
+  }
+  .block-wrapper {
+    margin: 0 0 0 0rem;
+  }
+  .btn,
+  .btn2 {
+    font-size: 0.7rem;
+    padding: 1em 0;
+    margin: 0.5em 0 0 0;
+  }
+  .btn {
+    margin: 1em 0 1em 0;
+  }
+  .block-1 p {
+    color: rgb(167, 163, 163);
+    font-size: 0.47rem;
+    
+  }
+}
