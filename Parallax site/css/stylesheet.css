@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.8em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+  opacity: 0.9;
+  padding: 5% 0;
+}
+
+.img1 {
+  background: url("../images/gray-industrial-machine-during-golden-hour-162568.jpg")
+    no-repeat center center/cover;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+.img2 {
+  background: url("../images/denny-muller-JI_5YGP5SLk-unsplash.jpg") no-repeat
+    center center/cover;
+  min-height: 700px;
+  background-attachment: fixed;
+}
+
+.img3 {
+  background: url("../images/worksite-ltd-7NULKst_T8k-unsplash\ \(1\).jpg")
+    no-repeat center center/cover;
+  min-height: 700px;
+  background-attachment: fixed;
+}
+
+.img4 {
+  background: url("../images/zbynek-burival-GrmwVnVSSdU-unsplash\ \(1\).jpg")
+    no-repeat center center/cover;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 10%;
+  padding: 5%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .img1,
+  .img2,
+  .img3,
+  .img4 {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 425px) {
+  .section p span {
+    display: none;
+  }
+}
